@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="StyleFruver.css">  <!--vincula el archivo html con el css estilosFruver-->  
     
 </head>
-<body style="background-image: url(Images/ImgFondoManzanas.jpg);">
+<body class="bg-image2">
     <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top shadow">  <!--crear un navbar por medio de bootstrap-->
         <div class="container-fluid ">      <!--contenedor del navbar-->
           <a class="navbar-brand " href="#">
@@ -22,21 +22,21 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
             <ul class="navbar-nav  mb-2 mb-lg-0" >  <!--lista de opciones para agregar al navbar-->
               <li class="nav-item">
-                <a class="nav-link active text-success" aria-current="page" href="#">   <!--Elemento de la lista de opciones del navbar -->
+                <a class="nav-link active text-success" aria-current="page" href="PaginaPrincipal.html">   <!--Elemento de la lista de opciones del navbar -->
                     <h2>
                         Inicio
                     </h2>
                 </a>
               </li>
               <li class="nav-item ">        <!--Elemento de la lista de opciones del navbar -->
-                <a class="nav-link text-success me-4" href="#">
+                <a class="nav-link text-success me-4" href="OpcionesInventario.html">
                     <h2>
                         Menu
                     </h2>
                 </a>
               </li>
               <li class="nav-item mt-2">
-                <a href="">
+                <a href="LoginFruver.html">
                     <button class="btn btn-success">        <!--opcion del navbar para cerrar sesion-->
                         Cerrar Sesion
                     </button>
@@ -54,7 +54,7 @@
 <br>
 <br>
     <!--Texto de bienvenida a opciones de inventario-->
-    <div class=" d-flex  align-items-center mt-5 text-black card shadow-sm opacity-50" style="height: 120px;">  <!--Contenedor con estilos -->
+    <div class=" d-flex  align-items-center mt-5 text-black card shadow-sm opacity-50 alturaContenedor">  <!--Contenedor con estilos -->
         <div class="card-body justify-content-center">  <!--div para agregar el mensaje de bienvenida-->
             <h1 class="text-center">
                 Bienvenido a Opciones
@@ -69,7 +69,7 @@
 <br>
 <br>
   <!--Contenido de la pagina-->
-    <div class="mt-5 bg-light" style="height: auto;" >  <!--contenedor del menu de opciones-->
+    <div class="mt-5 bg-light" >  <!--contenedor del menu de opciones-->
       <br>
       <br>  
       <h2 class="text-center text-black mb-5 text-decoration-underline">  <!--titulo del contenedor-->
@@ -102,9 +102,11 @@
           </div>
           <div class="col-sm-6 text-center mb-5"> <!--Segunda columna de la segunda fila-->
             <button class="btn btn-warning">  <!--boton para actualizar inventario-->
-              <h3>  <!--texto del boton-->
-                Actualizar Inventario 
-              </h3>
+              <a class="decorationNone text-black" href="ActualizarInventario.html">
+                <h3>  <!--texto del boton-->
+                  Actualizar Inventario 
+                </h3>
+              </a>
             </button>
         </div>
       </div>
@@ -112,14 +114,14 @@
 <!--boton de alerta flotante-->
 <div class="buttonsNetwork d-flex">                            <!--definiendo el boton-->
       <a class="buttonsNetwork_list" href="#">             <!--link del boton-->
-        <i class="" aria-hidden="true"><img src="Images/despertador.png" alt=""></i>  <!--icono representativo del boton(reloj)-->
+        <i class="" aria-hidden="true"><img src="Images/despertador.png" alt="#"></i>  <!--icono representativo del boton(reloj)-->
         <p class="socialMediaP justify-content-center">
           ¡Mira tus alertas!
         </p>
       </a>
 </div>
 
-<div style="height: 400px;">  <!--div para dejar espacio entre el body y el footer-->
+<div class="espaciadoDiv">  <!--div para dejar espacio entre el body y el footer-->
 </div>
 <!--inicio del footer-->
 <footer class="bg-dark text-white  pt-5 pb-4">  <!--estilos para textos y contenedores-->
@@ -130,17 +132,17 @@
           Autores 
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">  <!--autor 1-->
+          <a href="#" class="text-white decorationNone">  <!--autor 1-->
             Oscar David Moreno Cote
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">  <!--autor 2-->
+          <a href="#" class="text-white decorationNone">  <!--autor 2-->
             Nicolas Sarmiento Gómez
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">    <!--autor 3-->
+          <a href="#" class="text-white decorationNone">    <!--autor 3-->
             Jhon Mario Almendrales Carreño 
           </a>
         </p>
@@ -152,12 +154,12 @@
           Contactos
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             WhatsApp: 322 259 2280
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             Correo: omoreo7@udi.edu.co
           </a>
         </p>
@@ -168,12 +170,12 @@
           Dirrección
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             UDI: Calle 9 No. 23-55-Bucaramanga
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             Cll 204a #38a-27-Floridablanca
           </a>
         </p>
@@ -184,13 +186,13 @@
           Siguenos
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             <img src="Images/instagram.png" alt="logoInstagram">
             oscar_cotte7
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;"></a>
+          <a href="#" class="text-white decorationNone">
             <img src="Images/instagram.png" alt="logoInstagram">
             udi_oficial
           </a>
@@ -200,7 +202,7 @@
         <div class="col-md-7 col-lg-8">   <!--columna para agrefar el copyright-->
           <p>
             Copyright ©2024 All rights reserved by:
-            <a href="#" style="text-decoration: none;">
+            <a class="decorationNone" href="#">
               <strong class="text-warning">   <!--texto para resaltar-->
                 TheCotte
               </strong>

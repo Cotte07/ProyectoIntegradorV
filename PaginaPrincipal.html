@@ -11,7 +11,7 @@
     <!--el link de la linea 7 es para vincular el archivo html con BootStrap-->
     <link rel="stylesheet" href="StyleFruver.css">     <!--vinculo el archivo con los estilos de css--> 
 </head>
-<body style="background-image: url(Images/imgFondoPlatanos.jpg);">
+<body class="bg-image3">
   <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top shadow">  <!--crear un navbar por medio de bootstrap-->
     <div class="container-fluid ">      <!--contenedor del navbar-->
       <a class="navbar-brand " href="#">
@@ -24,21 +24,21 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
         <ul class="navbar-nav  mb-2 mb-lg-0" >  <!--lista de opciones para agregar al navbar-->
           <li class="nav-item">
-            <a class="nav-link active text-success" aria-current="page" href="#">   <!--Elemento de la lista de opciones del navbar -->
+            <a class="nav-link active text-success" aria-current="page" href="PaginaPrincipal.html">   <!--Elemento de la lista de opciones del navbar -->
                 <h2>
                     Inicio
                 </h2>
             </a>
           </li>
           <li class="nav-item ">        <!--Elemento de la lista de opciones del navbar -->
-            <a class="nav-link text-success me-4" href="#">
+            <a class="nav-link text-success me-4" href="OpcionesInventario.html">
                 <h2>
                     Menu
                 </h2>
             </a>
           </li>
           <li class="nav-item mt-2">
-            <a href="">
+            <a href="LoginFruver.html">
                 <button class="btn btn-success">        <!--opcion del navbar para cerrar sesion-->
                     Cerrar Sesion
                 </button>
@@ -48,11 +48,11 @@
       </div>
     </div>
   </nav>
-<div style="height: 100px;">    <!--div para crear un espacio entre el navbar y el contenido de la pagina-->
+<div class="espaciadoDiv2">    <!--div para crear un espacio entre el navbar y el contenido de la pagina-->
 </div>
 
 <!--Texto de bienvenida a opciones de inventario-->
-<div class=" d-flex  align-items-center mt-5 text-black card shadow-sm opacity-50" style="height: 120px;">  <!--Contenedor con estilos -->
+<div class=" d-flex  align-items-center mt-5 text-black card shadow-sm opacity-50 alturaContenedor">  <!--Contenedor con estilos -->
   <div class="card-body justify-content-center">  <!--div para agregar el mensaje de bienvenida-->
       <h1 class="text-center">
           Bienvenido a tu
@@ -72,7 +72,7 @@
   <h2 class="text-center text-black mb-5 text-decoration-underline">  <!--titulo "inventario"-->
     Inventario
   </h2>
-  
+  <!--estilos del buscador de productos-->
   <form class="d-flex justify-content-end" role="search">
     <div class="col-md-6">
       <input class="form-control me-6" type="search" placeholder="Escribe un producto" aria-label="Search">
@@ -93,8 +93,7 @@
         <thead class="table-success">
           <tr>
             <th>
-              Nombre
-            </th>
+              Nombre</th>
             <th>
               Cantidad Inicial
             </th>
@@ -171,16 +170,19 @@
       </div>
       <div class="col-md-4 text-center mb-4">
         <button class="btn btn-success">
-          <h5>
-            Actualizar Inventario
-          </h5>
+          <a class="decorationNone text-white" href="ActualizarInventario.html">
+                <h3>  <!--texto del boton-->
+                  Actualizar Inventario 
+                </h3>
+          </a>
         </button> 
       </div>
     </div>
-<hr>
+  
   </div>
 </div>
-
+<div class="espaciadoDiv2">
+</div>
 
 <!--boton de alerta flotante-->
 <div class="buttonsNetwork d-flex">                            <!--definiendo el boton-->
@@ -206,17 +208,17 @@
           Autores 
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">  <!--autor 1-->
+          <a href="#" class="text-white decorationNone">  <!--autor 1-->
             Oscar David Moreno Cote
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">  <!--autor 2-->
+          <a href="#" class="text-white decorationNone">  <!--autor 2-->
             Nicolas Sarmiento Gómez
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">    <!--autor 3-->
+          <a href="#" class="text-white decorationNone">    <!--autor 3-->
             Jhon Mario Almendrales Carreño 
           </a>
         </p>
@@ -228,12 +230,12 @@
           Contactos
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             WhatsApp: 322 259 2280
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             Correo: omoreo7@udi.edu.co
           </a>
         </p>
@@ -244,12 +246,12 @@
           Dirrección
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             UDI: Calle 9 No. 23-55-Bucaramanga
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             Cll 204a #38a-27-Floridablanca
           </a>
         </p>
@@ -260,13 +262,13 @@
           Siguenos
         </h5>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;">
+          <a href="#" class="text-white decorationNone">
             <img src="Images/instagram.png" alt="logoInstagram">
             oscar_cotte7
           </a>
         </p>
         <p>
-          <a href="#" class="text-white" style="text-decoration: none;"></a>
+          <a href="#" class="text-white decorationNone">
             <img src="Images/instagram.png" alt="logoInstagram">
             udi_oficial
           </a>
@@ -276,7 +278,7 @@
         <div class="col-md-7 col-lg-8">   <!--columna para agrefar el copyright-->
           <p>
             Copyright ©2024 All rights reserved by:
-            <a href="#" style="text-decoration: none;">
+            <a class="decorationNone" href="#">
               <strong class="text-warning">   <!--texto para resaltar-->
                 TheCotte
               </strong>

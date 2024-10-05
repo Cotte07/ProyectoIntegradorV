@@ -6,7 +6,7 @@ body{
     background-position: center;    /*centrar la imagen*/
 }
 
-
+/*////////estilos del icono social media flotante/////////////*/
 .socialMediaP{                      /*estilo de letra del socialMedia*/
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -51,4 +51,73 @@ body{
 
 .buttonsNetwork_list:hover:nth-child(1):hover{          /*estilo de color para el boton facebook*/
     color: #070707;
+}
+
+/*///////////estilos del login////////*/
+.bg-light p-5 rounded-5 text-sencondary shadow{     /*contenedor de la sesion de inicio*/
+    width: 25rem;
+}
+
+.bg-image1{     /*imagen de fondo del login*/
+    background-image: url(Images/ImgFondoFrutas.jpg)
+}
+
+.imageUsuario{  /*tamaño de la imagen de usuario*/
+    height: 200px;
+}
+
+.imageIconoUsuario{     /*tamaño de l icono pequeño del usuario*/
+    height: 30px;
+}
+
+/*///////////estilos de opcionesInventario////////*/
+.bg-image2{
+    background-image: url(Images/ImgFondoManzanas.jpg);
+    background-attachment: fixed;
+
+}
+
+.alturaContenedor{      /*altura del div del texto de bienvenida al inventario*/
+    height: 120px;
+}
+
+.espaciadoDiv{      /*espacio para separar dos div*/
+    height: 400px;
+}
+
+.espaciadoDiv2{
+    height: 200px;
+}
+
+.decorationNone{        /*elimina el subrayado y el texto azul*/
+    text-decoration: none;
+}
+
+/*/////////estilos de la paginaPrincipal//////////////*/
+
+.bg-image3{         /*imagen de fondo de la pagina*/
+    background-image: url(Images/imgFondoPlatanos.jpg);
+    background-attachment: fixed;
+
+}
+
+/*/////////estilos de ActualizarInventario//////////////*/
+
+.bg-image4{
+    background-image: url(Images/imgFondoPapa.jpg);
+    background-attachment: fixed;
+}
+
+.alturaTabla{
+    height: 200px;
+    overflow-y: auto;
+}
+
+.imput{
+    background-color: rgb(239, 219, 120);
+}
+
+.anchoContenedorImput{
+    width: 60%;
+    margin-left: 20%;
 }

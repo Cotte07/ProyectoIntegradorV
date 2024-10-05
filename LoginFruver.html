@@ -10,13 +10,12 @@
     <!--el link de la linea 7 es para vincular el archivo html con BootStrap-->
     <link rel="stylesheet" href="StyleFruver.css">     <!--vinculo el archivo con los estilos de css--> 
 </head>
-<body class="bg-secondary d-flex justify-content-center align-items-center vh-100" style="background-image: url(Images/ImgFondoFrutas.jpg);">      <!--centro, justifico y alineo al centro los elementos dentro del body-->
-        <div class="bg-light p-5 rounded-5 text-sencondary shadow" style="width: 25rem;">    <!--color de fondo, bordes redondeados,ancho del div-->
+<body class="bg-secondary d-flex justify-content-center align-items-center vh-100 bg-image1" >      <!--centro, justifico y alineo al centro los elementos dentro del body-->
+        <div class="bg-light p-5 rounded-5 text-sencondary shadow">    <!--color de fondo, bordes redondeados,ancho del div-->
             <div class="d-flex justify-content-center shadow-sm">     <!--elementos del div alineados como la imagen de usuario-->
-                <img 
+                <img class="imageUsuario"
                 src="Images/iconoUsuario.png"     
                 alt="loginUsuario"
-                style="height: 200px;"
                 > <!--Imagen de usuario para el login-->
             </div>
 
@@ -25,20 +24,18 @@
             </div>
             <div class="input-group mt-3">   <!--alinea los iconos y el input de username-->
                 <div class="input-group-text bg-success">
-                    <img 
-                        src="Images/iconoUsuario.png    " 
+                    <img class="imageIconoUsuario"
+                        src="Images/iconoUsuario.png" 
                         alt="username"
-                        style="height: 30px;"
                     >
                 </div>
                 <input class="form-control" type="text" placeholder="username">  <!--Cuandro para añadir texto para el username-->
             </div>
             <div class="input-group mt-1">   <!--alinea los iconos y el input de password-->
                 <div class="input-group-text bg-success">
-                    <img 
+                    <img class="imageIconoUsuario"
                         src="Images/candado.png" 
                         alt="passwordIcon"
-                        style="height: 30px;"
                     >
                 </div>
                 <input class="form-control" 
@@ -50,7 +47,7 @@
                 </div>
             </div>
             <div class="btn btn-success mt-4 w-100 shadow-sm">     <!--estilo al boton login-->
-                login   <!--texto para realizar el respectivo logeo-->
+                <a class="text-decoration-none text-white" href="PaginaPrincipal.html">Entrar</a>   <!--texto para realizar el respectivo logeo-->
             </div>
             
         </div>
